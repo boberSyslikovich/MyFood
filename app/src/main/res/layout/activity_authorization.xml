@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authorization">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/main_back_ground" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@android:color/white"
+
+            android:hint="Email"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/userPassword"
+            />
+
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+
+            android:inputType="textPassword"
+            android:layout_above="@id/emailSignInButton"
+            android:hint="Password"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/emailSignInButton"
+
+
+            android:text="Авторизація"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#808080"
+            android:shadowRadius="5"
+
+            android:layout_above="@id/emailCreateAccountButton"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/emailCreateAccountButton"
+
+
+            android:text="Регістрація"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#808080"
+            android:shadowRadius="5"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

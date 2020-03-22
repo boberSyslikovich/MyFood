@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#221F1F"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_margin="5dp"
+
+            android:text="Title"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/minus"
+
+
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonshape2"
+
+            android:text="-"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+
+
+            android:layout_toEndOf="@id/imageView"
+            android:layout_below="@id/text1"
+            />
+        <TextView
+            android:id="@+id/count"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/minus"
+            android:layout_below="@id/text1"
+            android:layout_margin="10dp"
+
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+        <Button
+            android:id="@+id/plus"
+
+
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            android:background="@drawable/buttonshape2"
+            android:layout_toEndOf="@id/count"
+            android:layout_below="@id/text1"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/plus"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+
+            android:text="Price"
+            android:textSize="15sp"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
